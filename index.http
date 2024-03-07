@@ -1,4 +1,4 @@
-POST http://localhost:3004/users
+POST http://localhost:3000/users
 Content-Type:application/json
 
 {
@@ -7,4 +7,35 @@ Content-Type:application/json
     "password":"Ganesh$07",
     "gender":"male",
     "location":"Nalgonda"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type:application/json
+
+{
+    "username":"ganesh007",
+    "password":"Ganesh$07"
+}
+
+###
+GET http://localhost:3000/profile/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
+
+
+###
+GET http://localhost:3000/recipes/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
+
+###
+POST http://localhost:3000/recipes/
+Content-Type: 'application/json'
+
+{
+    "name":"Palak Panneer",
+    "description":"Palak Paneer is a North Indian dish featuring paneer (Indian cottage cheese) cubes cooked in a creamy spinach gravy. The spinach puree is flavored with onions, tomatoes, ginger, garlic, and spices like cumin, coriander, and garam masala. Paneer cubes are lightly fried and added to the gravy, creating a flavorful and nutritious dish. It is commonly served with roti, naan, or rice and garnished with cream or yogurt.",
+    "ingredients":"Spinach, Paneer (Indian cottage cheese), Onion, Tomato, Ginger, Garlic, Cumin seeds, Coriander powder, Garam masala, Turmeric powder, Green chili (optional), Salt, Oil or ghee (clarified butter), Fresh cream (optional), Lemon juice (optional).",
+    "instructions":"To prepare Palak Paneer, start by blanching fresh spinach leaves until wilted, then blend them into a smooth puree. In a separate pan, sauté onions, ginger, garlic, and tomatoes until soft. Add turmeric, coriander, and garam masala, then stir in the spinach puree and simmer until thickened. Lightly fry paneer cubes in another pan until golden brown, then add them to the spinach gravy and simmer together. Garnish with cream and a squeeze of lemon juice, then serve hot with roti, naan, or rice for a delicious and nutritious meal.",
+    "imageUrl":"https://img.freepik.com/free-photo/flat-lay-pakistani-food-arrangement_23-2148825110.jpg?t=st=1709816530~exp=1709820130~hmac=35629e7e0212f0c42b371d5e2afd9f0238c33988e0e4894de86fbd5701211aa0&w=826",
 }

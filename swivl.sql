@@ -59,5 +59,3 @@
 -- Serve hot and enjoy the flavorful and aromatic biryani with raita or a fresh salad on the side.',
 -- 'https://img.freepik.com/free-photo/close-up-appetizing-ramadan-meal_23-2151182540.jpg?t=st=1709800411~exp=1709804011~hmac=a69175395fc8b0d4f4b2033c3682dbd077a4d1424f3f31fa3fea95b8413bc89f&w=900'
 -- );
-
--- SELECT * FROM recipe;
