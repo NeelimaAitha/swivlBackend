@@ -33,6 +33,8 @@ const authenticateToken = async (request, response, next) => {
   const { authorization } = request.headers;
   if (authorization !== undefined) {
     jwtToken = authorization.split(" ")[1];
+  } else {
+    response.send("Invalid Access Token");
   }
   if (jwtToken !== undefined) {
     jwt.verify(jwtToken, "ganikey", async (error, payload) => {
@@ -62,11 +64,27 @@ app.get("/profile/", authenticateToken, (request, response) => {
   userObj.getUserProfile(request, response, db);
 });
 
-//get recipe API
-app.get("/recipes/:id", authenticateToken, (request, response) => {
+//Get recipes API
+app.get("/recipes/", authenticateToken, (request, response) => {
+  recipeObj.getRecipes(request, response, db);
+});
+
+//Get recipe API
+app.get("/recipes/:id/", authenticateToken, (request, response) => {
   recipeObj.getRecipe(request, response, db);
 });
 
+//Add recipe API
 app.post("/recipes/", authenticateToken, (request, response) => {
   recipeObj.addRecipe(request, response, db);
+});
+
+//Update recipe API
+app.put("/recipes/:id/", authenticateToken, (request, response) => {
+  recipeObj.updateRecipe(request, response, db);
+});
+
+//Delete recipe API
+app.delete("/recipes/:id", authenticateToken, (request, response) => {
+  recipeObj.deleteRecipe(request, response, db);
 });

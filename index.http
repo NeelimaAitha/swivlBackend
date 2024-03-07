@@ -25,17 +25,52 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imdhb
 
 
 ###
-GET http://localhost:3000/recipes/1/
+GET http://localhost:3000/recipes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
+###
+GET http://localhost:3000/recipes/15/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
 
 ###
 POST http://localhost:3000/recipes/
-Content-Type: 'application/json'
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
 
 {
     "name":"Palak Panneer",
     "description":"Palak Paneer is a North Indian dish featuring paneer (Indian cottage cheese) cubes cooked in a creamy spinach gravy. The spinach puree is flavored with onions, tomatoes, ginger, garlic, and spices like cumin, coriander, and garam masala. Paneer cubes are lightly fried and added to the gravy, creating a flavorful and nutritious dish. It is commonly served with roti, naan, or rice and garnished with cream or yogurt.",
     "ingredients":"Spinach, Paneer (Indian cottage cheese), Onion, Tomato, Ginger, Garlic, Cumin seeds, Coriander powder, Garam masala, Turmeric powder, Green chili (optional), Salt, Oil or ghee (clarified butter), Fresh cream (optional), Lemon juice (optional).",
     "instructions":"To prepare Palak Paneer, start by blanching fresh spinach leaves until wilted, then blend them into a smooth puree. In a separate pan, sauté onions, ginger, garlic, and tomatoes until soft. Add turmeric, coriander, and garam masala, then stir in the spinach puree and simmer until thickened. Lightly fry paneer cubes in another pan until golden brown, then add them to the spinach gravy and simmer together. Garnish with cream and a squeeze of lemon juice, then serve hot with roti, naan, or rice for a delicious and nutritious meal.",
-    "imageUrl":"https://img.freepik.com/free-photo/flat-lay-pakistani-food-arrangement_23-2148825110.jpg?t=st=1709816530~exp=1709820130~hmac=35629e7e0212f0c42b371d5e2afd9f0238c33988e0e4894de86fbd5701211aa0&w=826",
+    "imageUrl":"https://img.freepik.com/free-photo/flat-lay-pakistani-food-arrangement_23-2148825110.jpg?t=st=1709816530~exp=1709820130~hmac=35629e7e0212f0c42b371d5e2afd9f0238c33988e0e4894de86fbd5701211aa0&w=826"
 }
+
+###
+POST http://localhost:3000/recipes/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
+
+{
+    "name":"Fish Ftry",
+    "description":"Fish fry is a popular dish made by marinating fish fillets with spices and seasonings, then coating them with breadcrumbs or a batter before frying until crispy and golden brown. It is a versatile dish that can be prepared using various types of fish and is often served as an appetizer or main course in many cuisines around the world. The crispy exterior and tender, flaky fish inside make it a flavorful and satisfying dish enjoyed by seafood lovers.",
+    "ingredients":"Fish fillets, Lemon juice or vinegar, Ginger-garlic paste (optional), Salt, Red chili powder or paprika, Turmeric powder, Coriander powder, Cumin powder, Garam masala (optional), Black pepper, Gram flour (besan) or all-purpose flour, Rice flour or cornstarch, Breadcrumbs, Eggs (optional), Oil.",
+    "instructions":"To prepare fish fry, start by marinating fish fillets with lemon juice or vinegar, ginger-garlic paste (if using), salt, red chili powder or paprika, turmeric powder, coriander powder, cumin powder, garam masala (if using), and black pepper. Let the fish marinate for about 30 minutes to absorb the flavors. In a separate bowl, mix gram flour (besan) or all-purpose flour with rice flour or cornstarch to create a dry coating mixture. Dip each marinated fish fillet into the dry coating mixture, ensuring it is well-coated on all sides. Optionally, you can dip the coated fish fillets into beaten eggs for an extra crispy coating. Then, coat the fish fillets with breadcrumbs to add a crunchy texture. Heat oil in a frying pan over medium-high heat. Once the oil is hot, carefully place the coated fish fillets into the pan and fry until they are golden brown and crispy on both sides, flipping them halfway through the cooking process. Once cooked, remove the fish fillets from the pan and place them on a paper towel-lined plate to drain any excess oil. Serve the fish fry hot with your favorite dipping sauce or accompaniments. Enjoy!",
+    "imageUrl":"https://img.freepik.com/free-photo/front-close-view-fried-fishes-lemon-slices-brown-plate-spices-tomatoes-oil-bottle-mix-colors-table-with-free-space_179666-18174.jpg?t=st=1709821481~exp=1709825081~hmac=582171d9296445c82191389913ea71bb2c24a96affcd7a3e1bd805c09576776a&w=900"
+}
+
+###
+###
+PUT http://localhost:3000/recipes/15/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
+
+{
+    "name":"Chicken Biryani",
+    "description":"Biryani is a fragrant and flavorful rice dish originating from the Indian subcontinent. It typically combines long-grain rice with marinated meat or vegetables, layered with spices, herbs, and aromatics. Cooked slowly in a sealed pot, biryani is known for its rich, complex flavors and ability to bring people together in communal dining.",
+    "ingredients":"Basmati rice, Chicken, Yogurt, Onions, Tomatoes, Garlic, Ginger, Green chilies, Fresh cilantro (coriander) leaves, Fresh mint leaves, Garam masala, Turmeric powder, Red chili powder, Cumin seeds, Coriander powder, Cardamom pods, Cinnamon sticks, Cloves, Bay leaves, Saffron strands, Milk, Ghee or cooking oil, Salt, Lemon juice.",
+    "instructions":"To prepare chicken biryani, start by marinating chicken pieces with yogurt, ginger-garlic paste, lemon juice, salt, and biryani masala for about 30 minutes. Meanwhile, soak basmati rice in water for 30 minutes. In a separate pan, heat oil and fry onions until golden brown. Add whole spices like cinnamon, cardamom, and cloves, then add marinated chicken and cook until half done. Parboil soaked rice and layer it over the partially cooked chicken. Add saffron-infused milk, fried onions, mint leaves, and coriander leaves. Cover and cook on low heat until the rice and chicken are fully cooked and aromatic. Serve hot with raita or salad. Enjoy your flavorful chicken biryani!",
+    "imageUrl":"https://img.freepik.com/premium-photo/arabic-food-kabsa-with-chicken-almonds-closeup-plate-generative-ai_779468-4840.jpg?w=900"
+}
+
+###
+DELETE http://localhost:3000/recipes/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
