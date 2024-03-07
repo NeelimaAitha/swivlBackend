@@ -1,9 +1,9 @@
 -- CREATE TABLE 
 -- user(
 --     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
---     username TEXT,
---     name TEXT, 
---     password TEXT, 
+--     username TEXT NOT NULL UNIQUE,
+--     name TEXT NOT NULL, 
+--     password TEXT NOT NULL, 
 --     gender VARCHAR(250), 
 --     location TEXT
 --  );
@@ -14,10 +14,10 @@
 
 -- CREATE TABLE recipe(
 --     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
---     name TEXT,
+--     name TEXT NOT NULL,
 --     description TEXT,
---     ingredients TEXT,
---     instructions TEXT,
+--     ingredients TEXT NOT NULL,
+--     instructions TEXT NOT NULL,
 --     image_url TEXT
 -- );
 

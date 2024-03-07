@@ -1,0 +1,10 @@
+POST http://localhost:3004/users
+Content-Type:application/json
+
+{
+    "username":"ganesh007",
+    "name":"Ganesh Kumar",
+    "password":"Ganesh$07",
+    "gender":"male",
+    "location":"Nalgonda"
+}
