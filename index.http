@@ -10,6 +10,18 @@ Content-Type:application/json
 }
 
 ###
+POST http://localhost:3000/users
+Content-Type:application/json
+
+{
+    "username":"kavya19",
+    "name":"Kavyasree",
+    "password":"kavya@19",
+    "gender":"female",
+    "location":"Kollapur"
+}
+
+###
 
 POST http://localhost:3000/login/
 Content-Type:application/json
