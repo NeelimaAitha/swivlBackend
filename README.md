@@ -2,14 +2,12 @@
 
 Created user routes for `user registration`, `login`, and `profile management`, utilizing methods from the User class.
 
-
 Created recipe routes for `CRUD operations on recipes`, utilizing methods from the Recipe class.
 
 ### OOPS Usage:
 
 - Here we used OOPS to encapsulate the data within class and only expose necessary methods.
 - We utilise those methods to create routes.
-
 
 Use `npm install` to install the packages.
 
@@ -56,6 +54,7 @@ Run `node index.js` to run the project
     ```
     User Already Exists
     ```
+
 - **Scenario 2**
 
   - **Description**:
@@ -310,3 +309,9 @@ Deletes specific recipe based on the recipe ID
 Recipe deleted successfully
 
 ```
+
+<br/>
+
+### API live link: 
+
+- [https://swivlbackend-1.onrender.com](https://swivlbackend-1.onrender.com)
