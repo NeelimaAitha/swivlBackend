@@ -27,20 +27,20 @@ POST http://localhost:3000/login/
 Content-Type:application/json
 
 {
-    "username":"ganesh007",
-    "password":"Ganesh$07"
+    "username":"kavya19",
+    "password":"kavya@19"
 }
 
 ###
 GET http://localhost:3000/profile/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthdnlhMTkiLCJwYXNzd29yZCI6ImthdnlhQDE5IiwiaWF0IjoxNzA5ODcyODkyfQ.Vbfm4yNEPlaANtWU8QiXVaspljNLaKEbQ4tUceayRvc
 
 
 ###
 GET http://localhost:3000/recipes
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
 ###
-GET http://localhost:3000/recipes/15/
+GET http://localhost:3000/recipes/18/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
 
 ###
@@ -71,7 +71,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imdhb
 
 ###
 ###
-PUT http://localhost:3000/recipes/15/
+PUT http://localhost:3000/recipes/18/
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
 
@@ -84,5 +84,5 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imdhb
 }
 
 ###
-DELETE http://localhost:3000/recipes/3/
+DELETE http://localhost:3000/recipes/19/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo

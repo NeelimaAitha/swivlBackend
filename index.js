@@ -10,6 +10,7 @@ const User = require("./user");
 const Recipe = require("./recipe");
 let db;
 
+//Intializes database and provides connection object
 const initializeDB = async () => {
   try {
     db = await open({ filename: dbPath, driver: sqlite3.Database });
@@ -64,12 +65,12 @@ app.get("/profile/", authenticateToken, (request, response) => {
   userObj.getUserProfile(request, response, db);
 });
 
-//Get recipes API
+//Get multiple recipes API
 app.get("/recipes/", authenticateToken, (request, response) => {
   recipeObj.getRecipes(request, response, db);
 });
 
-//Get recipe API
+//Get specific recipe API
 app.get("/recipes/:id/", authenticateToken, (request, response) => {
   recipeObj.getRecipe(request, response, db);
 });

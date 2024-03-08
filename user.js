@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 const app = express();
 app.use(express.json());
 
-module.exports = class User {
+class User {
   async registerUser(request, response, db) {
     try {
       const { username, name, password, gender, location } = request.body;
@@ -68,3 +68,5 @@ module.exports = class User {
     }
   }
 };
+
+module.exports=User

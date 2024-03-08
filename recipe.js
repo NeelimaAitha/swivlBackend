@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
-module.exports = class Recipe {
+class Recipe {
   async getRecipes(request, response, db) {
     try {
       const {
@@ -84,3 +84,5 @@ module.exports = class Recipe {
     }
   }
 };
+
+module.exports=Recipe
