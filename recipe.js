@@ -10,7 +10,7 @@ class Recipe {
         sort_by = "id",
         sort_order = "ASC",
       } = request.query;
-      const getRecipesQuery = `SELECT * FROM recipe WHERE name LIKE '%${search_q}%' ORDER BY ${sort_by} ${sort_order};`;
+      const getRecipesQuery = `SELECT name,description,ingredients,instructions,image_url as imageUrl FROM recipe WHERE name LIKE '%${search_q}%' ORDER BY ${sort_by} ${sort_order};`;
       const recipes = await db.all(getRecipesQuery);
       response.send(recipes);
     } catch (error) {
@@ -22,7 +22,7 @@ class Recipe {
   async getRecipe(request, response, db) {
     try {
       const { id } = request.params;
-      const getRecipeQuery = `SELECT * FROM recipe WHERE id=${id}`;
+      const getRecipeQuery = `SELECT name,description,ingredients,instructions,image_url as imageUrl FROM recipe WHERE id=${id}`;
       const recipe = await db.get(getRecipeQuery);
       response.send(recipe);
     } catch (error) {
@@ -83,6 +83,6 @@ class Recipe {
       response.status(500).send("An error occurred while deleting the recipe");
     }
   }
-};
+}
 
-module.exports=Recipe
+module.exports = Recipe;

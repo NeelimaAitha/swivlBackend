@@ -9,6 +9,7 @@ Content-Type:application/json
     "location":"Nalgonda"
 }
 
+
 ###
 POST http://localhost:3000/users
 Content-Type:application/json
@@ -21,27 +22,31 @@ Content-Type:application/json
     "location":"Kollapur"
 }
 
-###
 
+###
 POST http://localhost:3000/login/
 Content-Type:application/json
 
 {
-    "username":"kavya19",
-    "password":"kavya@19"
+    "username":"ganesh007",
+    "password":"Ganesh$07"
 }
+
 
 ###
 GET http://localhost:3000/profile/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthdnlhMTkiLCJwYXNzd29yZCI6ImthdnlhQDE5IiwiaWF0IjoxNzA5ODcyODkyfQ.Vbfm4yNEPlaANtWU8QiXVaspljNLaKEbQ4tUceayRvc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODc4ODk3fQ.5mmPW_2FaeCpJqAg1DUp68yQhm1fxj5EOPYQLBuB8JY
 
 
 ###
 GET http://localhost:3000/recipes
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
+
+
 ###
-GET http://localhost:3000/recipes/18/
+GET http://localhost:3000/recipes/15/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhbmVzaDAwNyIsInBhc3N3b3JkIjoiR2FuZXNoJDA3IiwiaWF0IjoxNzA5ODE0MjA0fQ.UQBojTA699-_7AGBG75gNzZ44QMz1uiLTYEOKD7iheo
+
 
 ###
 POST http://localhost:3000/recipes/
@@ -56,6 +61,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imdhb
     "imageUrl":"https://img.freepik.com/free-photo/flat-lay-pakistani-food-arrangement_23-2148825110.jpg?t=st=1709816530~exp=1709820130~hmac=35629e7e0212f0c42b371d5e2afd9f0238c33988e0e4894de86fbd5701211aa0&w=826"
 }
 
+
 ###
 POST http://localhost:3000/recipes/
 Content-Type: application/json
@@ -69,7 +75,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imdhb
     "imageUrl":"https://img.freepik.com/free-photo/front-close-view-fried-fishes-lemon-slices-brown-plate-spices-tomatoes-oil-bottle-mix-colors-table-with-free-space_179666-18174.jpg?t=st=1709821481~exp=1709825081~hmac=582171d9296445c82191389913ea71bb2c24a96affcd7a3e1bd805c09576776a&w=900"
 }
 
-###
+
 ###
 PUT http://localhost:3000/recipes/18/
 Content-Type: application/json
@@ -82,6 +88,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imdhb
     "instructions":"To prepare chicken biryani, start by marinating chicken pieces with yogurt, ginger-garlic paste, lemon juice, salt, and biryani masala for about 30 minutes. Meanwhile, soak basmati rice in water for 30 minutes. In a separate pan, heat oil and fry onions until golden brown. Add whole spices like cinnamon, cardamom, and cloves, then add marinated chicken and cook until half done. Parboil soaked rice and layer it over the partially cooked chicken. Add saffron-infused milk, fried onions, mint leaves, and coriander leaves. Cover and cook on low heat until the rice and chicken are fully cooked and aromatic. Serve hot with raita or salad. Enjoy your flavorful chicken biryani!",
     "imageUrl":"https://img.freepik.com/premium-photo/arabic-food-kabsa-with-chicken-almonds-closeup-plate-generative-ai_779468-4840.jpg?w=900"
 }
+
 
 ###
 DELETE http://localhost:3000/recipes/19/
