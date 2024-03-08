@@ -56,12 +56,23 @@ Run `node index.js` to run the project
     ```
     User Already Exists
     ```
-
 - **Scenario 2**
 
   - **Description**:
 
-    If user doesn't exist
+    If user doesn't exist and password length is less than 8
+
+  - **Response**
+
+    ```
+    Password should consist aleast 8 characters
+    ```
+
+- **Scenario 3**
+
+  - **Description**:
+
+    If user doesn't exist and password length is greater than or equal to 8
 
   - **Response**
 

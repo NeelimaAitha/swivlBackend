@@ -8,15 +8,20 @@ class User {
   async registerUser(request, response, db) {
     try {
       const { username, name, password, gender, location } = request.body;
-      const hashedPassword = await bcrypt.hash(password, 10);
       const userQuery = `SELECT * FROM user WHERE username='${username}'`;
       const user = await db.get(userQuery);
       if (user === undefined) {
-        const loginUserQuery = `
-                INSERT INTO user(username,name,password,gender,location) VALUES
-                ('${username}','${name}','${hashedPassword}','${gender}','${location}');`;
-        await db.run(loginUserQuery);
-        response.send("User Registered Successfully");
+        if (password.length < 8) {
+          response.status(400);
+          response.send("Password should consist alteast 8 characters");
+        } else {
+          const hashedPassword = await bcrypt.hash(password, 10);
+          const loginUserQuery = `
+          INSERT INTO user(username,name,password,gender,location) VALUES
+          ('${username}','${name}','${hashedPassword}','${gender}','${location}');`;
+          await db.run(loginUserQuery);
+          response.send("User Registered Successfully");
+        }
       } else {
         response.status(400);
         response.send("User Already Exists");
@@ -67,6 +72,6 @@ class User {
       response.status(500).send("An error occurred while getting user profile");
     }
   }
-};
+}
 
-module.exports=User
+module.exports = User;

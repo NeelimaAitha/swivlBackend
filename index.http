@@ -22,6 +22,17 @@ Content-Type:application/json
     "location":"Kollapur"
 }
 
+###
+POST http://localhost:3000/users
+Content-Type:application/json
+
+{
+    "username":"ramcharan22",
+    "name":"Ramcharan Vantepaka",
+    "password":"ramcharan@21",
+    "gender":"male",
+    "location":"Nakrekal"
+}
 
 ###
 POST http://localhost:3000/login/
