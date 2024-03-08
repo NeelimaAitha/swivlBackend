@@ -1,5 +1,22 @@
 # Recipes Backend
 
+Created user routes for `user registration`, `login`, and `profile management`, utilizing methods from the User class.
+
+
+Created recipe routes for `CRUD operations on recipes`, utilizing methods from the Recipe class.
+
+### OOPS Usage:
+
+- Here we used OOPS to encapsulate the data within class and only expose necessary methods.
+- We utilise those methods to create routes.
+
+
+Use `npm install` to install the packages.
+
+Run `node index.js` to run the project
+
+<br/>
+
 #### Sample Valid User Credentials
 
 ```
@@ -17,7 +34,8 @@
 
 **Request**
 
--  user id is auto incremented
+- user id is auto incremented
+
 ```
 {
     "username":"ganesh007",
@@ -216,7 +234,9 @@ Returns a specific recipe based on recipe ID
 Adds a Recipe to the database
 
 #### Request
+
 - recipe id is auto incremented
+
 ```
 {
     "name":"Palak Panneer",
@@ -279,9 +299,3 @@ Deletes specific recipe based on the recipe ID
 Recipe deleted successfully
 
 ```
-
-<br/>
-
-Use `npm install` to install the packages.
-
-Run `node index.js` to run the project
